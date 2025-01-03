@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio & KWIN City</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <script>
+        // Function to toggle the visibility of additional sections
+        function toggleInfo(id) {
+            var section = document.getElementById(id);
+            if (section.style.display === "none" || section.style.display === "") {
+                section.style.display = "block";
+            } else {
+                section.style.display = "none";
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <!-- Header Section -->
+    <header>
+        <div class="container">
+            <h1>Hello, We are <span class="highlight">[Coders]</span> 👋</h1>
+            <p>We are a team passionate about technology and problem-solving. Here's a glimpse of our work :</p>
+        </div>
+        <div class="image-container">
+            <img src="DAA CITY PLAN.png" alt="Diagram of the DAA City Plan project" class="header-image">
+        </div>
+        <h1>Welcome to Mathura City</h1>
+        <p>"An investment in knowledge pays the best interest"</p>
+    </header>
+
+    <!-- Projects Section -->
+    <section class="projects">
+        <div class="container">
+            <h2>🚀 Projects</h2>
+            <ul>
+                <li><strong>Project:</strong> Many homeless individuals sleep in railway stations due to a lack of safety shelter, leading to discomfort and security concerns. There is a need for dedicated shelter options to reduce reliance on stations as sleeping areas.</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Skills Section -->
+    <section class="skills">
+        <div class="container">
+            <h2>🛠 Skills</h2>
+            <ul>
+                <li>C++, Python, JavaScript</li>
+                <li>Data Structures and Algorithms</li>
+                <li>Web Development (React.js, Node.js)</li>
+                <li>Problem Solving-Techniques</li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Social Links Section -->
+    <section class="social-links">
+        <div class="container">
+            <h2>🌐Find us online</h2>
+            <ul>
+                <h3>GitHub</h3>
+                <li><a href="https://github.com/DK-823" target="_blank" class="btn secondary-btn">GitHub</a></li>
+                <h3>LinkedIn</h3>
+                <li><a href="https://www.linkedin.com/in/sindhu-kesaraju-036135344" target="_blank" class="btn secondary-btn">Sindhu K</a></li>
+                <li><a href="https://www.linkedin.com/in/sangini-shee" target="_blank" class="btn secondary-btn">Sangini S</a></li>
+                <li><a href="https://www.linkedin.com/in/kshitij-h-457483343/" target="_blank" class="btn secondary-btn">Kshitij H</a></li>
+            </ul>
+        </div>
+    </section>
+
+    <!-- Portfolio Details Section -->
+    <section class="portfolio-details">
+        <div class="container">
+            <h2>📚 Portfolio Details</h2>
+            <div class="details-container">
+                <div class="detail-item">
+                    <h3 class="detail-title">DAA</h3>
+                    <p>Algorithmic Problem Solving</p>
+                </div>
+                <div class="detail-item">
+                    <h3 class="detail-title">Course Code</h3>
+                    <p>24ECAC203</p>
+                </div>
+                <div class="detail-item">
+                    <h3 class="detail-title">The Coders</h3>
+                    <ul>
+                        <li>Sindhu K</li>
+                        <li>Sangini S</li>
+                        <li>Riya P</li>
+                        <li>Kshitij H</li>
+                    </ul>
+                </div>
+                <div class="detail-item">
+                    <h3 class="detail-title">Roll no</h3>
+                    <ul>
+                        <li>114</li>
+                        <li>104</li>
+                        <li>113</li>
+                        <li>105</li>
+                    </ul>
+                </div>
+                <div class="detail-item">
+                    <h3 class="detail-title">SRN</h3>
+                    <ul>
+                        <li>01FE23BCI032</li>
+                        <li>01FE23BCI009</li>
+                        <li>01FE23BCI027</li>
+                        <li>01FE23BCI010</li>
+                    </ul>
+                </div>
+                <div class="detail-item">
+                    <h3 class="detail-title">Course Instructor</h3>
+                    <p>KMMR Sir</p>
+                </div>
+                <div class="detail-item">
+                    <h3 class="detail-title">University</h3>
+                    <p>KLE Tech University</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Toggle Sections for KWIN City -->
+    <button class="button" onclick="toggleInfo('course-intro')">Course Introduction</button>
+    <button class="button" onclick="toggleInfo('business-ideas')">Business Ideas</button>
+
+    <section id="course-intro" style="display:none;">
+        <h2>Course Introduction</h2>
+        <p>Design and Analysis of Algorithms course helped us to learn efficient problem-solving techniques.</p>
+        <h3>Data Structures and Algorithms Studied So Far:</h3>
+        <ul>
+            <li><strong>Binary Search Trees:</strong> Used to organize and quickly search through data arranged in a hierarchy.</li>
+        <li><strong>AVL Trees:</strong> A more balanced version of BSTs, making search faster.</li>
+        <li><strong>Red-Black Trees:</strong> A self-balancing binary search tree that guarantees logarithmic height and fast operations.</li>
+        <li><strong>2-3 Trees:</strong> A self-balancing search tree used to store and retrieve data efficiently.</li>
+        </ul>
+    </section>
+
+    <section id="business-ideas" style="display:none;">
+        <h2>Business Ideas</h2>
+        <table>
+            <thead>
+                <tr>
+                    <th>SLNO</th>
+                    <th>Business Case</th>
+                    <th>Description</th>
+                    <th>Owner</th>
+                    <th>Problem Tools</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                <td>1</td>
+                <td>Mapping shelter locations and accessibility</td>
+                <td>Finding out the location of the shelter</td>
+                <td>Sangini</td>
+                <td>Graphs</td>
+            </tr>
+            <tr>
+                <td>2</td>
+                <td>Quick access to shelter details based on criteria</td>
+                <td>Allows for fast lookup of shelters by name,location,availability </td>
+                <td>Riya</td>
+                <td>Hash Tables</td>
+            </tr>
+            <tr>
+                <td>3</td>
+                <td>Mananging unique identifiers for shelters or individuals </td>
+                <td>Ensures no duplication of data</td>
+                <td>Sindu</td>
+                <td>Stacks</td>
+            </tr>
+            <tr>
+                <td>4</td>
+                <td>Allocating shelters based of priority</td>
+                <td>Ensures individuals with higher needs are assigned shelters first </td>
+                <td>Kshitij</td>
+                <td>Heap</td>
+            </tr>
+            <tr>
+                <td>5</td>
+                <td>Managing waiting lists for shelter</td>
+                <td>Allows for dynamic insertion and removal of individuals as they are allocated spaces or leave the list</td>
+                <td>Sindhu</td>
+                <td>Linked Lists</td>
+            </tr>
+            <tr>
+                <td>6</td>
+                <td>Managing entry and exit to shelters</td>
+                <td>Ensure first-come,first-served access unless priority overrides are needed
+                </td>
+                <td>Sangini</td>
+                <td>Queues</td>
+            </tr>
+            <tr>
+                <td>7</td>
+                <td>Tracking occupancy and resource allocation</td>
+                <td>Tracking of vacant shelters and allocating it to people who need it</td>
+                <td>Kshitij</td>
+                <td>Linked Lists</td>
+            </tr>
+            </tbody>
+        </table>
+    </section>
+
+    <!-- City Map Section -->
+    <section id="city-map">
+        <h2>City Map</h2>
+        <p>Explore Mathura City districts.</p>
+        <img src="https://i.ibb.co/W6FNqyd/projdaa.png" alt="City Map" style="width: 100%; max-width: 600px; border-radius: 8px;">
+    </section>
+
+    <!-- Team Members Section -->
+    <section>
+        <h2>Team Members</h2>
+        <ul>
+            <li>Sindhu K</li>
+            <li>Sangini S</li>
+            <li>Riya P</li>
+            <li>Kshitij H</li>
+        </ul>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <blockquote>“If you don't build your dream, someone else will hire you to help them build theirs.” – Dhirubhai Ambani</blockquote>
+        <p>&copy; 2024 Mathura City | Designed by Students of KLE Technological University</p>
+    </footer>
+</body>
+</html>
